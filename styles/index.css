@@ -79,10 +79,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
   background:linear-gradient(to bottom, black,#060606,rgb(3, 2, 10));
   position: fixed;
   width: 100vw;
+  padding: 10px;
+  overflow-x: hidden;
 }
 
 section {

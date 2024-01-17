@@ -5,13 +5,13 @@
 #projects h2 {
   color: white;
   line-height: 3rem;
+  padding: 2px;
 }
 
 .projects-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90vw;
   margin: auto;
 }
 
@@ -31,7 +31,8 @@
 
 #projects img {
   display: block;
-  width: 400px;
+  width: 80vw;
+  max-width: 400px;
   height: auto;
 }
 
