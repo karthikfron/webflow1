@@ -1,0 +1,43 @@
+#projects {
+  background-color: rgb(0, 0, 0);
+}
+
+#projects h2 {
+  color: white;
+  line-height: 3rem;
+}
+
+.projects-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  margin: auto;
+}
+
+.project-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+}
+
+.project-title h3 {
+  text-align: center;
+  line-height: 2rem;
+  padding: 5px;
+}
+
+#projects img {
+  display: block;
+  width: 400px;
+  height: auto;
+}
+
+.project-description {
+  font-size: 24px;
+  color: #eeeeee;
+  line-height: 2rem;
+  padding: 20px;
+}

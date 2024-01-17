@@ -1,0 +1,62 @@
+#services {
+    background-color: #0e0e0e;
+}
+
+#services > h2 {
+    color: white;
+}
+
+.services-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 90vw;
+    margin: auto;
+}
+
+.service-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 12px;
+}
+
+.service-title > h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #c2c2c2;
+    text-align: center;
+}
+
+.service-image {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 12px;
+}
+
+#services img {
+    width: 400px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.service-description {
+    font-size: 18px;
+    font-family: "Poppins",Ariel,sans-serif;
+    line-height: 1.5rem;
+    color: #c1c1c1;
+    text-align: center;
+}
+
+
+@media only screen and (max-width:768px){
+    .services-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,63 @@
+#hero {
+    background-color: black;
+    color: white;
+}
+
+#hero h2 {
+    padding-top: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#hero p {
+    font-size: 2.9rem;
+    line-height: 3rem;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    color:#9e9a9a;
+}
+
+#hero-welcome {
+    text-align: center;
+    color: #b7b7b7;
+}
+
+#hero > .hero-btns-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#hero > .hero-btns-wrapper > button {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 12px;
+    border: 1px solid #bebebe;
+    background-color: #063ced;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+
+#hero > .hero-btns-wrapper > button:hover {
+    border: 1px solid #ffffff;
+    background-color: blue;
+    a {
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #hero {
+        padding: 50px 20px 20px 20px;
+    }
+    #hero  p {
+        font-size: 2rem;
+        line-height:2.5rem;
+    }
+    #hero > .hero-btns-wrapper {
+        flex-direction: column;
+    }   
+}

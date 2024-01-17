@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #1e29bb;
+  --tertiary-color: #1e1e1e;
+  --quaternary-color: #fff;
+
+  --links-primary-color: #b8b8b8;
+  --links-hover-color: #ffffff;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+}
+
+#menubar {
+  display: none;
+}
+
+h1 {
+  color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2 {
+  color: #1e1e1e;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 4rem;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.2;
+  color: #1e1e1e;
+}
+
+a {
+  color: var(--links-primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--links-hover-color);
+  transition-duration: 200ms;
+  text-shadow: 2px 2px 2px rgba(34, 107, 233, 0.5);
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background:linear-gradient(to bottom, black,#060606,rgb(3, 2, 10));
+  position: fixed;
+  width: 100vw;
+}
+
+section {
+  padding-top: 100px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0px 10px;
+}
+
+nav > ul > li {
+  padding: 4px 10px;
+  font-size: 24px;
+}
+
+.mobile-only {
+  display: none;
+}
+
+#menubar-btn {
+  color: white;
+}
+
+footer {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-links > ul > li,
+.footer-socials > ul > li {
+  padding: 6px;
+  font-size: 18px;
+  margin: auto;
+}
+
+.footer-socials > h3 {
+  color: rgb(0, 81, 255);
+}
+
+footer > ul {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+
+.footer-links > ul,
+.footer-socials > ul {
+  padding: 10px;
+  font-size: 18px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 650px) {
+  .mobile-only {
+    display: block;
+  }
+
+  #menubar {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  nav > ul {
+    display: none;
+  }
+
+  nav > ul.active {
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 90vh;
+    justify-content: space-evenly;
+  }
+  nav > ul > li > a {
+    font-size: 3rem;
+  }
+}

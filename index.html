@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebFlow</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/hero.css" />
+    <link rel="stylesheet" href="./styles/services.css" />
+    <link rel="stylesheet" href="./styles//projects.css">
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Webflow</h1>
+      <nav>
+        <div id="menubar"><button id="menubar-btn"><span class="material-icons">menu</span></button> </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <!-- <li><a href="#reviews">Reviews</a></li> -->
+          <li><a href="#contact">Get in touch</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <h2>Home</h2>
+        <div class="home-wrapper">
+          <h3 id="hero-welcome">Welcome to Webflow</h3>
+          <div class="home-content">
+            <p>
+              Your one-stop solution for stunning and personalized websites. Converting ideas to reality.
+            </p>
+          </div>
+        </div>
+        <div class="hero-btns-wrapper">
+          <button id="hero-btn"><a href="#contact">Contact sales</a></button>
+          <button id="our-projects"><a href="#projects">Browse Projects</a></button>
+        </div>
+      </section>
+
+      <section id="services">
+        <h2>Services</h2>
+        <div class="services-wrapper">
+          <div class="service-card">
+            <div class="service-title"><h3>Business website development</h3></div>
+            <div class="service-image">
+              <img src="img/business.jpeg" alt="Business website image">
+            </div>
+            <div class="service-description"> Get a custom personalized website tailored for your product needs.</div>
+          </div>
+          <div class="service-card">
+            <div class="service-title"><h3>Portfolio development</h3></div>
+            <div class="service-image">
+              <img src="img/personal.jpeg" alt="Personal website image">
+            </div>
+            <div class="service-description"> Need a portfolio website to showcase your work to potential clients ? We've got you covered.
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-title"><h3>Ecommerce development</h3></div>
+            <div class="service-image">
+              <img src="img/ecommerce.jpeg" alt="Ecommerce website image">
+            </div>
+            <div class="service-description">Expand your Business online to serve the shopping experiences & unlock new customer bases.</div>
+          </div>
+            <div class="service-card">
+              <div class="service-title">
+                <h3>Custom web solutions</h3>
+              </div>
+              <div class="service-image">
+                <img src="img/customsolutions.jpeg" alt="custom web solutions image">
+              </div>
+              <div class="service-description"> Need a custom web solution like chrome extensions, web applications. We will help you to build the solution you love. </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects Showcase</h2>
+        <div class="projects-wrapper">
+          <div class="project-card">
+            <div class="project-title"><h3>Enoki  Website</h3></div>
+            <a href="https://enokiso.vercel.app" target="_blank" rel="noopener" >
+              <div class="project-preview">
+                <img src="img/enoki.png" alt="Enoki Website image">
+            </a>
+            </div>
+            <div class="project-description"> Enoki is a Saas product that helps teams to collaborate in real time by providing linux virtual workspaces. </div>
+          </div>
+          
+            <!-- <div class="project-card">
+              <div class="project-title"><h3></h3></div>
+              <div class="project-preview"></div>
+              <div class="project-description"></div>
+            </div>
+            
+              <div class="project-card">
+                <div class="project-title"><h3></h3></div>
+                <div class="project-preview"></div>
+                <div class="project-description"></div>
+              </div> -->
+        </div>
+      </section>
+
+      <!-- <section id="reviews">
+        <h2>Reviews</h2>
+        <div class="reviews-wrapper"></div>
+      </section> -->
+
+      <section id="contact">
+        <h2>Get in Touch</h2>
+        <p class="contact-caption">Have a project in mind. We'll get back to you </p>
+        <div class="contact-container">
+          <form action="">
+            <label for="email" id="email"
+              >Email Address
+              <input type="email" placeholder="john@gmail.com" required />
+            </label>
+            <label for="message">
+              Message
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                required
+              ></textarea>
+            </label>
+            <button id="contact-submit-btn">
+              Submit<span class="material-icons">bolt</span>
+            </button>
+          </form>
+        </div>
+      </section>
+
+    </main>
+    <footer>
+      <div class="footer-title">
+        <div>
+          <h3><a href="#">Webflow</a></h3>
+        </div>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <!-- <li><a href="#reviews">Reviews</a></li> -->
+          <li><a href="#contact">Get in touch</a></li>
+        </ul>
+      </div>
+      <div class="footer-socials">
+        <h3>Socials</h3>
+        <ul>
+          <li><a href="">Linkedin</a></li>
+          <li><a href="">Instagram</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
