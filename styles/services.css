@@ -1,5 +1,5 @@
 #services {
-    background-color: #0e0e0e;
+    background-color:rgb(9, 7, 7);
 }
 
 #services > h2 {
@@ -51,6 +51,26 @@
     text-align: center;
 }
 
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* #hero, #services {
+    height: 100vh;
+    overflow:inherit; 
+  }
+   */
+  
+  .service-card.in-view {
+    animation: slideInFromRight 1s forwards;
+  }
 
 @media only screen and (max-width:900px){
     .services-wrapper {
